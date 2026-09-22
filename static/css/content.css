@@ -1,0 +1,58 @@
+/* Блок content */
+.content {
+  flex: 1;
+  min-width: 0;
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  min-height: 320px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  animation: fade .25s ease;
+}
+
+.content__title {
+  margin: 0 0 16px;
+  font-size: 20px;
+  word-break: break-all;
+}
+
+.content__status { margin: 0; }
+.content__status--loading { color: #6b7280; }
+.content__status--error { color: #dc2626; }
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Таблица внутри content */
+.content__table {
+  overflow: auto;
+  max-height: 65vh;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.content__table table {
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 100%;
+}
+
+.content__table th,
+.content__table td {
+  border: 1px solid #e5e7eb;
+  padding: 6px 12px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.content__table th {
+  background: #f9fafb;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.content__table tr:nth-child(even) td { background: #fafafa; }

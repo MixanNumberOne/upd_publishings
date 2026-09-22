@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Панели</title>
+<!-- Стили по БЭМ-блокам -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/panels.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/content.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/sheet-tabs.css') }}">
+</head>
+<body>
+  <!-- Блок header -->
+  <header class="header">
+    <h1 class="header__title" id="page-title">Загрузка…</h1>
+  </header>
+
+  <!-- Блок layout -->
+  <div class="layout">
+    <!-- Блок panels -->
+    <aside class="panels" id="buttons"></aside>
+
+    <!-- Блок content -->
+    <main class="content" id="content">Выберите панель слева</main>
+  </div>
+
+<!-- SheetJS: парсинг xls/xlsx на клиенте (локальная копия) -->
+<script src="{{ url_for('static', filename='xlsx.full.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

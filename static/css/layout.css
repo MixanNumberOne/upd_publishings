@@ -1,0 +1,7 @@
+/* Блок layout */
+.layout {
+  display: flex;
+  gap: 20px;
+  padding: 24px;
+  align-items: flex-start;
+}

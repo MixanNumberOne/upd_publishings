@@ -1,0 +1,12 @@
+/* Блок header */
+.header {
+  padding: 24px 32px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
