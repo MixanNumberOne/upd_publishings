@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S .venv/bin/python
 
 from flask import Flask, jsonify, render_template, send_from_directory
 import re, os
