@@ -28,6 +28,7 @@
 
 <!-- SheetJS: парсинг xls/xlsx на клиенте (локальная копия) -->
 <script src="{{ url_for('static', filename='xlsx.full.min.js') }}"></script>
-<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+<!-- Модуль: импортирует utils/state/api/components/panels/workbook -->
+<script type="module" src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>
 </html>

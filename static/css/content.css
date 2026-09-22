@@ -10,6 +10,13 @@
   animation: fade .25s ease;
 }
 
+.content__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
 .content__title {
   margin: 0 0 16px;
   font-size: 20px;
