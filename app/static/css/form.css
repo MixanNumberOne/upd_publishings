@@ -1,0 +1,143 @@
+/* Блок form: поля ввода, кнопки, подписи */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 360px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  animation: fade .25s ease;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form__label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Поля ввода */
+.form__input {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #1f2937;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+}
+
+.form__input::placeholder {
+  color: #9ca3af;
+}
+
+.form__input:hover {
+  border-color: #cbd5e1;
+}
+
+.form__input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79,70,229,.15);
+}
+
+.form__input:disabled {
+  background: #f9fafb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.form__input--error {
+  border-color: #dc2626;
+}
+
+.form__input--error:focus {
+  box-shadow: 0 0 0 3px rgba(220,38,38,.15);
+}
+
+/* Сообщение об ошибке под полем */
+.form__hint {
+  margin: 0;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.form__hint--error {
+  color: #dc2626;
+}
+
+/* Чекбокс «запомнить меня» */
+.form__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form__checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #4f46e5;
+  cursor: pointer;
+}
+
+/* Кнопка отправки — как .panels__item--active */
+.form__submit {
+  padding: 12px 16px;
+  font-size: 15px;
+  font-family: inherit;
+  font-weight: 600;
+  color: #fff;
+  background: #4f46e5;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform .1s ease, box-shadow .15s ease, background .15s ease;
+}
+
+.form__submit:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(79,70,229,.25);
+}
+
+.form__submit:active {
+  transform: translateY(0);
+  background: #4338ca;
+}
+
+.form__submit:disabled {
+  background: #c7d2fe;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Ссылки под формой */
+.form__links {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.form__links a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.form__links a:hover {
+  text-decoration: underline;
+}

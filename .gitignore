@@ -1,0 +1,7 @@
+*.docx
+instance/
+plans/
+databases/
+__pycache__/
+config.py
+test.py
